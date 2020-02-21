@@ -22,16 +22,13 @@ period_names = [item.find(class_="period-name").get_text() for item in items]
 short_descriptions = [
     item.find(class_="short-desc").get_text() for item in items]
 temperatures = [item.find(class_="temp").get_text() for item in items]
-# print(period_names)
-# print(short_descriptions)
-# print(temperatures)
 
 # Use Pandas to write into CSV file and do some data analytic
 weather_stuff = pd.DataFrame(
     # Write lists into dictionary
     {"Period": period_names,
      "Short_Descriptions": short_descriptions,
-     "Temperatures": temperatures,
+     "Temperatures": temperatures,©
      }
 )
 
