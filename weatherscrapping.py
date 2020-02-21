@@ -28,7 +28,7 @@ weather_stuff = pd.DataFrame(
     # Write lists into dictionary
     {"Period": period_names,
      "Short_Descriptions": short_descriptions,
-     "Temperatures": temperature,
+     "Temperatures": temperatures,
      }
 )
 
